@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+:root {
+    /* PRIMARY */
+    --Red: hsl(1, 90%, 64%);
+    --Blue:hsl(219, 85%, 26%);
+    /* PRIMARY */
+    /* NEUTRAL */
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    /* NEUTRAL */
+    --Font-size-paragraph: 16px;
+    --Font-family:'Plus Jakarta Sans', sans-serif;
+}
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--Font-family);
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+.container {
+    padding: 11px 20%;
+}
+header {
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    font-size: calc(1vw + 50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+header p{
+    font-size: calc(1vw + 50%);
+    cursor: pointer;
+}
+.count {
+    padding: 10%;
+    background-color: var(--Very-dark-blue);
+    color: var(--Very-light-grayish-blue);
+    border-radius: 5px;
+    font-size: calc(1vw + 50%);
+    width: 5px;
+    height: 5px;
+    max-width: 10%;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.notification {
+    display: flex;
+    gap: 8px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    font-size: calc(0.7vw + 50%);
+}
+.notif_contents {
+    display: flex;
+    flex-direction: column;
+}
+.notif {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    position: relative;
+}
+.notif .active-chess-club {
+    font-weight: 800;
+    color: var(--Blue);
+}
+.notif span {
+    color: var(--Grayish-blue);
+}
+.notif span strong{
+    color: black
+}
+.notif h4 {
+    color: var(--Dark-grayish-blue);
+}
+.notif_contents span{
+    color: var(--Grayish-blue);
+}
+.active {
+    background-color: var(--Very-light-grayish-blue);
+}
+.message p {
+    border: 1px solid rgb(206, 206, 206);
+    padding: 16px;
+    font-size: calc(1vw + 20%);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+.contents-container {
+    display: flex;
+    gap: 8px;
+}
+.container-notif {
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+}
+.active-state {
+    border: 1px solid red;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: var(--Red);
+    border-radius: 100px;
+    right: -5px;
+    top: 25%;
+    transform: translate(100%, 50%);
+}
